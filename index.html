@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta neme="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/main.js"></script>
+<title>Okayama</title>
+<link rel="icon" href="img/favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+
+<body class="menu-open">
+  <header>
+     <!-- ハンバーガーメニュー -->
+     <i class="fa fa-bars" id="show"></i>
+    <h1>大都会・岡山</h1>
+    <img src="/Users/iwatanaoya/Okayama/img/9dda7af5b4882abbf9b3341cefb5fa81_s.jpg" alt="岡山駅看板"
+    width=750 height=300>
+    <p>岡山の魅力を発信するサイトです</p>
+    <a href="" class="btn">会員登録</a>
+  </header>
+  <!-- ここまでheader -->
+  <main>
+
+    <!-- 岡山紹介 -->
+        <h2>岡山を軽く紹介</h2>
+    <div class="container">
+      <section>
+        <img src="img/momotaro.jpg" alt="">
+        <p>私の思う岡山の魅力はなんといっても災害が少ないこと。<br>
+          首都圏や九州では、頻繁に台風や地震などの自然災害が起こっていますが、
+          岡山県は地震や台風は全くありません。<br>
+          また新幹線の停車駅でもあり、割となんでもあるので利便性も高いです。
+        </p>
+      </section>
+
+      <section>
+        <h2>岡山の二大都市</h2>
+        <img src="img/momotaro.jpg" alt="">
+        <p>岡山市と倉敷市です。
+            日本三大園の後楽園があります。<br>
+            倉敷市は、古き良き建物が並ぶ美観地区やジーンズの産地でもあります。
+        </p>
+      </section>
+
+      <section>
+        <h2>2020年　首都・岡京問題！</h2>
+        <img src="img/okakyo.png" alt="">
+        <p>これは、アメリカの掲示板で突如現れた2036年からタイムトラベルしてやってきたジョン・タイターと名乗る者の証言。<br>
+          2020年には日本の首都が東京ではなく、岡京という名に変わった岡山になっているという問題！<br>
+          個人的には、災害が多発している関東圏よりも災害が少ない比較的安全といえる岡山に首都を移すのは賛成するw
+        </p>
+      </section>
+    </div>
+
+    <!-- 会員登録と促すセクション -->
+    <section class="call-to-action">
+        <h2>今すぐ会員登録しよう</h2>
+        <a href="" class="btn">会員登録</a>
+      </section>
+ 
+  </main>
+
+  <!-- 黒いカバー -->
+  <div id="cover"></div>
+
+  <!-- メニュー -->
+  <div id="menu">
+      <i class="fa fa-times" id="hide"></i>
+    <ul>
+      <li>岡山県に住むならここ</li>
+      <li>おすすめのラーメン店</li>
+      <li>おすすめの居酒屋</li>
+      <li>おすすめのバー</li>
+      <li class="quiz"><a href="file:///Users/iwatanaoya/Okayama/quiz.html">岡山クイズ</a></li>
+      <li>管理人</li>
+    </ul>
+  </div>
+  <!-- ここまでmain -->
+  <div class="admin">
+    <h2>管理人</h2>
+    <ul>
+      <li>
+        <img src="img/pro.jpg" alt="プロフィール">
+        <h2>じゅもくん</h2>
+        <p>よろしくね（イラストと本人は大きく異なりますw）</p>
+      </li>
+    </ul>
+  </div>
+
+  <footer>
+    (c)okayama.com
+  </footer>
+
+  <!-- JavaScriptの命令 -->
+  <script>
+    (function(){
+  "use strict";
+
+  var show=document.getElementById("show")
+  var hide=document.getElementById("hide")
+
+  show.addEventListener("click",function(){
+    document.body.className="menu-open";
+  });
+  hide.addEventListener("click",function(){
+    document.body.className="";
+  });
+})();
+  </script>
+</body>
+</html>
